@@ -115,10 +115,10 @@ class RewardFormState extends State<RewardForm> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
-            child: raisedButtonIcon(
+            child: RaisedButton.icon(
                 onPressed: send, icon: Icon(Icons.send), label: Text('Submit')),
           ),
-          raisedButtonIcon(
+          RaisedButton.icon(
               onPressed: () {
                 Navigator.pop(context, false);
               },

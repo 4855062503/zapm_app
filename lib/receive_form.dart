@@ -182,7 +182,7 @@ class ReceiveFormState extends State<ReceiveForm> {
               keyboardType: TextInputType.numberWithOptions(decimal: true),
               decoration: InputDecoration(
                   labelText: 'amount',
-                  suffixIcon: flatButton(
+                  suffixIcon: FlatButton(
                       onPressed: () {
                         if (!UseMerchantApi) return;
                         setState(() {

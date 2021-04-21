@@ -126,7 +126,7 @@ class ClaimingFormState extends State<ClaimingForm> {
                 child: Container(padding: const EdgeInsets.only(top: 20.0))),
             Visibility(
                 visible: !_checking,
-                child: raisedButtonIcon(
+                child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pop(context, _sentFunds);
                     },

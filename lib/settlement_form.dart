@@ -212,7 +212,7 @@ class SettlementFormState extends State<SettlementForm> {
             keyboardType: TextInputType.numberWithOptions(decimal: true),
             decoration: InputDecoration(
                 labelText: '$AssetShortNameUpper amount',
-                suffixIcon: flatButton(
+                suffixIcon: FlatButton(
                     onPressed: () =>
                         _amountController.text = '${widget._max - widget._fee}',
                     child: Text('max', style: TextStyle(color: ZapYellow)))),

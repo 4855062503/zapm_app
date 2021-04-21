@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:zapdart/bip39widget.dart';
-import 'package:zapdart/widgets.dart';
 
 import 'config.dart';
 
@@ -39,7 +38,7 @@ class NewMnemonicFormState extends State<NewMnemonicForm> {
             ),
             Container(
                 padding: const EdgeInsets.only(top: 18.0),
-                child: raisedButtonIcon(
+                child: RaisedButton.icon(
                     onPressed: () {
                       Navigator.pop(context);
                     },
